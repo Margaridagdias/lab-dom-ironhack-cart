@@ -1,67 +1,95 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+input {
+  border: solid 1px black;
+}
 
-body {
+.container {
+  width: 90%;
+  min-width: 800px;
   margin: 0 auto;
-  padding: 1em;
-  max-width: 60em;
-  font-family: 'Roboto Mono', sans-serif;
-  line-height: 1.5;
-  color: #2d354c;
+  font-family: monospace;
 }
 
-button,
-input {
-  font: inherit;
-  color: inherit;
+.info-container {
+  width: 25%;
+  margin: 50px auto 0;
+  font-family: monospace;
 }
 
-th,
-td,
-button,
-input {
-  padding: 0.75em 1em;
+.item {
+	font-size: 0;
+  margin: 30px 0;
 }
 
-table#cart {
+.row {
   width: 100%;
-  border-collapse: collapse;
 }
 
-table#cart tfoot {
-  background: #eee;
+.col-xs-2 {
+  font-size: 14px;
+  font-family: monospace;
+  display: inline-block;
+  width: 16.5%;
 }
 
-table#cart td,
-table input {
-  border: 1px solid #dadada;
+.col-xs-3 {
+  font-size: 14px;
+  display: inline-block;
+  width: 24.5%;
 }
 
-table input[type='number'] {
-  max-width: 4em;
+.col-xs-5 {
+  font-size: 14px;
+  display: inline-block;
+  width: 41%;
+}
+
+.col-xs-4 {
+  font-size: 14px;
+  display: inline-block;
+  width: 33%;
+}
+
+.col-xs-7 {
+  font-size: 14px;
+  display: inline-block;
+  width: 58%;
 }
 
 .btn {
   display: inline-block;
-  border: 0;
-  border-radius: 0.25em;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
-}
-
-.btn-success,
-.btn-remove {
-  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .btn-success {
-  background-color: #2cc5fa;
+    color: #fff;
+    background-color: #28b0ff;
+    border-color: #28b0ff;
 }
 
 .btn-remove {
-  background-color: #f27471;
+    color: #fff;
+    background-color: #ff606b;
+    border-color: #ff606b;
 }
 
-h1,
-h2,
-.calculate-total {
-  text-align: center;
+.quantity {
+  margin: 0 5px;
 }
